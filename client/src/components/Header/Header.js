@@ -1,24 +1,15 @@
-// import { Typography } from '@mui/material';
-// import React from 'react';
+import { Typography } from '@material-ui/core';
+import React from 'react';
 
-// import useStyles from './styles';
+import useStyles from './styles';
 
-// const Header = () => {
-//   return (
-//     <Typography
-//       variant="h4"
-//       align="center"
-//       className={{
-//         backgroundColor: 'blue',
-//         color: 'white',
-//         marginBottom: 20,
-//         fontWeight: 'lighter',
-//         padding: '5px 0',
-//       }}
-//     >
-//       Blog
-//     </Typography>
-//   );
-// };
+const Header = () => {
+  const classes = useStyles();
+  return (
+    <Typography variant="h4" align="center" className={classes.container}>
+      Blog
+    </Typography>
+  );
+};
 
-// export default Header;
+export default Header;
